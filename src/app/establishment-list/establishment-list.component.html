@@ -1,0 +1,16 @@
+<div *ngIf="establishments">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Geolocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let establishment of establishments">
+          <td>{{establishment.name}}</td>
+          <td>{{establishment.geolocation}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

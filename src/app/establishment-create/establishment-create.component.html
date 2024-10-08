@@ -1,0 +1,11 @@
+<form [formGroup]="establishmentForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+    <div>
+      <label for="geolocation">Address</label>
+      <input id="geolocation" type="text" formControlName="geolocation">
+    </div>
+    <button type="submit" [disabled]="!establishmentForm.valid">Submit</button>
+</form>
